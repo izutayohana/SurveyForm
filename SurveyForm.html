@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Survey</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="back">
+            <div class="content">
+        <h1 id="title">05/30 エンジニアセミナー・座談会 </h1>
+        <p id="description">この度は、弊社のセミナーにご参加いただき誠に有難うございます。
+
+            本件は、セミナー満足度向上のためのアンケートとなっております。
+            お気軽にご感想をお答えください。</p>
+            <p class="mandatory">* は必要です。</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">お名前をご入力ください。* <input name="name" id="name" type="text" placeholder="ここにお名前をご入力ください" required></label>
+                <label for="email" id="email-label">メールアドレスをご入力ください。* <input name="email" id="email" type="email" placeholder="ここにメールをご入力ください" required></label>
+                <label for="number" id="number-label">年齢をご入力ください。 <input name="number" id="number" type="number"  min="18" max="120" placeholder="ここに年齢をご入力ください" ></label>
+            </fieldset>
+            <fieldset>
+                <label for="position">どのポジションに応募しましたか。*
+                    <select name="dropdown" id="dropdown" required>
+                      <option value="">オプションを選択してください。</option>
+                      <option value="1">Web開発</option>
+                      <option value="2">ソフトウェアエ</option>
+                      <option value="3">ゲーム開発</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </label>
+                  <div>今後弊社選考への本エントリーを希望しますか。*</div>
+                  <label for="desire"><input checked value="1" class="inline" id="desire" type="radio" name="options"> 希望する</label>
+                  <label for="thinking"><input value="2" class="inline" id="thinking" type="radio" name="options">検討する</label>
+                  <label for="nodesire"><input value="3" class="inline" id="nodesire" type="radio" name="options">希望しない</label>
+                  <label for="point">どのポジションに応募しましたか。*
+                    <select name="point" id="point" required>
+                      <option value="">オプションを選択してください。</option>
+                      <option value="1">アセミナー</option>
+                      <option value="2">座談会</option>
+                      <option value="3">休憩</option>
+                      <option value="4">その他</option>
+                    </select>
+                  </label>
+                  <label for="what">その他のを選択した場合は、理由を教えてください。  <input name="what" id="what" type="text"></label>
+            </fieldset>
+            <fieldset>
+                <div>このイベントのこと、どのように知りましたか。(該当する項目にすべてチェックしてください。)</div>
+                <label for="linkedin"><input  value="1" class="inline" name="linkedin" id="linkedin" type="checkbox" required>LinkedIn</label>
+                <label for="tv"><input  value="2" class="inline" name="tv" id="tv" type="checkbox"> Television</label>
+                <label for="site"><input  value="3" class="inline" name="site" id="site" type="checkbox">弊社のウェブサイト</label>
+                <label for="other"><input  value="4" class="inline" name="other" id="other" type="checkbox">その他</label>
+            </fieldset>
+            <fieldset>
+                <label for="doubts"> イベント内で解消できなかった疑問点・企画へのご意見などございましたら下記ご記入ください。
+                    <textarea name="doubts" id="doubts" rows="3" cols="30" placeholder="ここにコメントをご入力ください。"></textarea>
+                    </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+    </body>
+</html>
